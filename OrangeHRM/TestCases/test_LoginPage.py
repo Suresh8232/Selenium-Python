@@ -1,5 +1,4 @@
 import time
-
 from Pages.LoginPage import LoginPage
 from TestCases.test_base import BaseTest
 from Utilities.ConfigReader import get_property

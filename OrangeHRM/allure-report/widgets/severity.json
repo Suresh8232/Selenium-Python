@@ -1,0 +1,21 @@
+[ {
+  "uid" : "58c5d3461403384e",
+  "name" : "test_verifyHomePageTitle[chrome]",
+  "time" : {
+    "start" : 1645018698923,
+    "stop" : 1645018705318,
+    "duration" : 6395
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d87b6a5a955ac1a1",
+  "name" : "test_login[chrome]",
+  "time" : {
+    "start" : 1645018687432,
+    "stop" : 1645018691919,
+    "duration" : 4487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

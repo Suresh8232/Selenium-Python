@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TestCases",
+    "children" : [ {
+      "name" : "test_LoginPage",
+      "children" : [ {
+        "name" : "Test_Login",
+        "children" : [ {
+          "name" : "test_login[chrome]",
+          "uid" : "d87b6a5a955ac1a1",
+          "parentUid" : "94b55f412d6e1d3aeb1581484d7c787a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645018687432,
+            "stop" : 1645018691919,
+            "duration" : 4487
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : false,
+          "parameters" : [ "'chrome'" ]
+        }, {
+          "name" : "test_verifyHomePageTitle[chrome]",
+          "uid" : "58c5d3461403384e",
+          "parentUid" : "94b55f412d6e1d3aeb1581484d7c787a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645018698923,
+            "stop" : 1645018705318,
+            "duration" : 6395
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 1,
+          "retriesStatusChange" : true,
+          "parameters" : [ "'chrome'" ]
+        } ],
+        "uid" : "94b55f412d6e1d3aeb1581484d7c787a"
+      } ],
+      "uid" : "9711e43d989833f8c9e8ace5717a14de"
+    } ],
+    "uid" : "0408d924bc3d43de55080f45620fd22e"
+  } ]
+}

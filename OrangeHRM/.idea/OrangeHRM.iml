@@ -7,4 +7,14 @@
     <orderEntry type="jdk" jdkName="Python 3.10 (OrangeHRM)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/Configurations" />
+        <option value="$MODULE_DIR$/Pages" />
+        <option value="$MODULE_DIR$/TestCases" />
+        <option value="$MODULE_DIR$/Utilities" />
+      </list>
+    </option>
+  </component>
 </module>

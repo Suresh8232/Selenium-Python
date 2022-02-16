@@ -1,0 +1,85 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-74D12JD",
+    "children" : [ {
+      "name" : "18240-MainThread",
+      "children" : [ {
+        "name" : "test_login[chrome]",
+        "uid" : "d87b6a5a955ac1a1",
+        "parentUid" : "862b5f37750a359d3d4c64c92ad8f604",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645018687432,
+          "stop" : 1645018691919,
+          "duration" : 4487
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'chrome'" ]
+      }, {
+        "name" : "test_verifyHomePageTitle[chrome]",
+        "uid" : "58c5d3461403384e",
+        "parentUid" : "862b5f37750a359d3d4c64c92ad8f604",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645018698923,
+          "stop" : 1645018705318,
+          "duration" : 6395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ "'chrome'" ]
+      } ],
+      "uid" : "862b5f37750a359d3d4c64c92ad8f604"
+    }, {
+      "name" : "21440-MainThread",
+      "children" : [ {
+        "name" : "test_login[chrome]",
+        "uid" : "7b1115ab6b98587b",
+        "parentUid" : "2bdd502658c91930ae847da257638a30",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645018556568,
+          "stop" : 1645018560287,
+          "duration" : 3719
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'chrome'" ]
+      }, {
+        "name" : "test_verifyHomePageTitle[chrome]",
+        "uid" : "38f8fb5b1e899732",
+        "parentUid" : "2bdd502658c91930ae847da257638a30",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645018567366,
+          "stop" : 1645018574457,
+          "duration" : 7091
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "'chrome'" ]
+      } ],
+      "uid" : "2bdd502658c91930ae847da257638a30"
+    } ],
+    "uid" : "b1b3c629794afdf58ead489897212a30"
+  } ]
+}

@@ -12,7 +12,7 @@ def init_driver(request):
     if request.param == "firefox":
         web_driver = webdriver.Firefox()
     request.cls.driver = web_driver
-    web_driver.get([get_property("url")])
+    web_driver.get(get_property("url"))
     web_driver.implicitly_wait(10)
     web_driver.maximize_window()
     yield
@@ -49,7 +49,8 @@ def pytest_runtest_makereport(item, call):
     extra = getattr(report, "extra", [])
     if report.when == "call":
         # always add url to report
-        extra.append(pytest_html.extras.url("http://www.example.com/"))
+        #extra.append(pytest_html.extras.url("http://www.example.com/"))
+        #report.extra = extra
         xfail = hasattr(report, "wasxfail")
         if (report.skipped and xfail) or (report.failed and not xfail):
             # only add additional html on failure
@@ -58,29 +59,3 @@ def pytest_runtest_makereport(item, call):
                 name='screenshot',
                 attachment_type=allure.attachment_type.PNG)
 
-# @pytest.hookimpl(hookwrapper=True)
-# def pytest_runtest_makereport(item, call):
-#     pytest_html = item.config.pluginmanager.getplugin("html")
-#     outcome = yield
-#     report = outcome.get_result()
-#     extra = getattr(report, "extra", [])
-#     if report.when == "call":
-#         # always add url to report
-#         extra.append(pytest_html.extras.url("http://www.example.com/"))
-#         xfail = hasattr(report, "wasxfail")
-#         if (report.skipped and xfail) or (report.failed and not xfail):
-#             # only add additional html on failure
-#             report_directory = os.path.dirname(item.config.option.htmlpath)
-#             file_name = report.nodeid.replace("::", "_") + ".png"
-#             destination_file = os.path.join(report_directory, file_name)
-#             driver = webdriver.Chrome()
-#             driver.save_screenshot(destination_file)
-#             allure.attach(
-#                 driver.get_screenshot_as_png(),
-#                 name='screenshot',
-#                 attachment_type=allure.attachment_type.PNG)
-#             if file_name:
-#                 html = '<div><img src="%s" alt="screenshot" style="width:300px;height=200px"'\
-#                        'onclick="window.open(this.src)" align="right"/></div>'%file_name
-#             extra.append(pytest_html.extras.html(html))
-#         report.extra = extra
