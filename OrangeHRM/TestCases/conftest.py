@@ -10,7 +10,7 @@ from Utilities.ConfigReader import get_property
 def init_driver(request):
     global web_driver
     if request.param == "chrome":
-        ser = Service(executable_path=".Drivers\\chromedriver.exe")
+        ser = Service(executable_path="C://Users//Admin//PycharmProjects//OrangeHRM//Drivers//chromedriver.exe")
         web_driver = webdriver.Chrome(service=ser)
     if request.param == "firefox":
         web_driver = webdriver.Firefox()
