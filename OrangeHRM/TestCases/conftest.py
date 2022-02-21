@@ -1,6 +1,8 @@
 import allure
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
 from Utilities.ConfigReader import get_property
 
 
@@ -8,7 +10,8 @@ from Utilities.ConfigReader import get_property
 def init_driver(request):
     global web_driver
     if request.param == "chrome":
-        web_driver = webdriver.Chrome()
+        ser = Service(executable_path=".Drivers\\chromedriver.exe")
+        web_driver = webdriver.Chrome(service=ser)
     if request.param == "firefox":
         web_driver = webdriver.Firefox()
     request.cls.driver = web_driver
